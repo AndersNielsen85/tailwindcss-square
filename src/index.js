@@ -9,9 +9,9 @@ const square = plugin(
         Object.entries(values).map(([key, value]) => {
           return {
             [`.${e(`square-${key}`)}`]: {
-              'width': `${value}px`,
-              'height': `${value}px`,
-              'min-width': `${value}px`,
+              'width': `${value}`,
+              'height': `${value}`,
+              'min-width': `${value}`,
             },
           }
         }),
@@ -22,9 +22,9 @@ const square = plugin(
   {
     theme: {
       square: {
-        15: '15',
-        30: '30',
-        45: '45',
+        15: '15px',
+        30: '30px',
+        45: '45px',
       },
     },
     variants: {
